@@ -1,0 +1,42 @@
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int x=0;
+        int y=0;
+        char dir='r';
+        int un=10;
+        for(int i=0;i<n;i++){
+            if(dir=='r'){
+                x=x+un;
+                un=un+10;
+                dir='u';
+            }
+            else if(dir=='u'){
+                y=y+un;
+                un=un+10;
+                dir='l';
+            }
+            else if(dir=='l'){
+                x=x-un;
+                un=un+10;
+                dir='d';
+            }
+            else if(dir=='d'){
+                y=y-un;
+                un=un+10;
+                dir='a';
+            }
+            else if(dir=='a'){
+                x=x+un;
+                un=un+10;
+                dir='r';
+            }
+        } 
+            System.out.print(x+" "+y);
+      
+        
+        
+    }
+}

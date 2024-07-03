@@ -1,0 +1,54 @@
+Write a program to change the given string to uppercase.
+
+Input Format
+
+Input consists of 1 string.
+
+Constraints
+
+string
+
+Output Format
+
+Output print the Uppercase of given string.
+
+Sample Input 0
+
+good
+Sample Output 0
+
+GOOD
+Sample Input 1
+
+Java Language
+Sample Output 1
+
+JAVA LANGUAGE
+Submissions: 476
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+    public static void main(String[] args) {
+6
+      Scanner s=new Scanner(System.in);
+7
+        String s1=s.nextLine();
+8
+        System.out.print(s1.toUpperCase());
+9
+    }
+10
+}

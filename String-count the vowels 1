@@ -1,0 +1,74 @@
+Write a program to count the number of vowels in the given string.
+
+Input Format
+
+Read a string
+
+Constraints
+
+string
+
+Output Format
+
+print the number of Vowels.
+
+Sample Input 0
+
+Java language
+Sample Output 0
+
+6
+Sample Input 1
+
+python LANGUAGE
+Sample Output 1
+
+5
+Submissions: 331
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+public class Solution {
+4
+    public static void main(String[] args) {
+5
+      Scanner s=new Scanner(System.in);
+6
+        String s1=s.next();
+7
+        String s2=s.next();
+8
+        String s3=s1+s2;
+9
+        int count=0;
+10
+        for(int i=0;i<s3.length();i++)
+11
+        {
+12
+            if(s3.charAt(i)=='a' || s3.charAt(i)=='e' || s3.charAt(i)=='i' || s3.charAt(i)=='o' || s3.charAt(i)=='u' ||
+13
+              s3.charAt(i)=='A' || s3.charAt(i)=='E' || s3.charAt(i)=='I' || s3.charAt(i)=='O' || s3.charAt(i)=='U')
+14
+            {
+15
+                count++;
+16
+            }
+17
+        }
+18
+        System.out.println(""+count);
+19
+    }
+20
+}
